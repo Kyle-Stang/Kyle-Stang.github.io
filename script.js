@@ -1,4 +1,3 @@
-<script>
 // Mobile nav toggle
 function toggleMenu() {
 document.getElementById('navLinks').classList.toggle('active');
@@ -12,4 +11,3 @@ const scrollHeight = document.documentElement.scrollHeight - document.documentEl
 const progress = (scrollTop / scrollHeight) * 100;
 document.getElementById('progress-bar').style.width = progress + '%';
 });
-</script>
