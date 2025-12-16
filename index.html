@@ -1,65 +1,134 @@
 <!DOCTYPE html>
-<!-- SKILLS -->
-<section id="skills" class="section alt">
-<h2 class="section-title">Skills</h2>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kyle Stang | Engineering Portfolio</title>
 
+  <!-- SEO -->
+  <meta name="description" content="Kyle Stang – Embedded & Electrical Engineering Portfolio" />
+  <meta name="author" content="Kyle Stang" />
 
-<div class="skills-grid">
-<div class="skill">Embedded Systems</div>
-<div class="skill">C / C++</div>
-<div class="skill">Microcontrollers</div>
-<div class="skill">I2C / SPI / UART</div>
-<div class="skill">Sensors & Instrumentation</div>
-<div class="skill">Python</div>
-</div>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Scroll Progress Bar -->
+<div id="progress-container"><div id="progress-bar"></div></div>
+
+<!-- NAV -->
+<header>
+  <nav class="nav">
+    <div class="nav-left">Kyle Stang</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <h1>Kyle Stang</h1>
+  <p class="tagline">Embedded & Electrical Engineering | Hardware + Software</p>
+  <div class="hero-buttons">
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="#contact" class="btn outline">Contact</a>
+  </div>
 </section>
 
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <h2 class="section-title">Experience</h2>
+
+  <div class="card-container">
+    <!-- Experience Card -->
+    <div class="card">
+      <h3>Role Title</h3>
+      <p class="card-subtitle">Organization • Dates</p>
+      <p class="card-desc">
+        Short description of responsibilities, technologies used,
+        and impact. Keep this concise and technical.
+      </p>
+      <a class="card-link" href="#">Learn More →</a>
+    </div>
+
+    <div class="card">
+      <h3>Another Role / Education</h3>
+      <p class="card-subtitle">Institution • Dates</p>
+      <p class="card-desc">
+        Coursework, focus areas, or applied engineering experience.
+      </p>
+      <a class="card-link" href="#">Learn More →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section alt">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill">Embedded Systems</div>
+    <div class="skill">C / C++</div>
+    <div class="skill">Microcontrollers</div>
+    <div class="skill">I2C / SPI / UART</div>
+    <div class="skill">Sensors & Instrumentation</div>
+    <div class="skill">Python</div>
+  </div>
+</section>
 
 <!-- PROJECTS -->
 <section id="projects" class="section">
-<h2 class="section-title">Projects</h2>
+  <h2 class="section-title">Projects</h2>
 
+  <div class="card-container horizontal" id="projectScroll">
+    <div class="card">
+      <h3>Project Title</h3>
+      <p class="card-subtitle">Tech Stack</p>
+      <p class="card-desc">
+        One-paragraph technical summary explaining what the system does
+        and what you implemented.
+      </p>
+      <a class="card-link" href="#">View Project →</a>
+    </div>
 
-<div class="card-container horizontal" id="projectScroll">
-<div class="card">
-<h3>Project Title</h3>
-<p class="card-subtitle">Tech Stack</p>
-<p class="card-desc">
-One-paragraph technical summary explaining what the system does
-and what you implemented.
-</p>
-<a class="card-link" href="#">View Project →</a>
-</div>
-
-
-<div class="card">
-<h3>Project Title</h3>
-<p class="card-subtitle">Tech Stack</p>
-<p class="card-desc">Another project description.</p>
-<a class="card-link" href="#">View Project →</a>
-</div>
-</div>
+    <div class="card">
+      <h3>Project Title</h3>
+      <p class="card-subtitle">Tech Stack</p>
+      <p class="card-desc">Another project description.</p>
+      <a class="card-link" href="#">View Project →</a>
+    </div>
+  </div>
 </section>
-
 
 <!-- CONTACT -->
 <section id="contact" class="section alt">
-<h2 class="section-title">Contact</h2>
-<p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
-<p>
-<a href="#">GitHub</a> •
-<a href="#">LinkedIn</a>
-</p>
+  <h2 class="section-title">Contact</h2>
+  <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+  <p>
+    <a href="#">GitHub</a> •
+    <a href="#">LinkedIn</a>
+  </p>
 </section>
-
 
 </main>
 
-
 <footer>
-<p>© 2025 Kyle Stang</p>
+  <p>© 2025 Kyle Stang</p>
 </footer>
-
 
 <script src="script.js"></script>
 </body>
