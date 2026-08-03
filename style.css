@@ -88,7 +88,7 @@ body {
   text-align: center;
   padding: 2rem;
   background-image: url('profile photo.png'); /* fallback if not set inline */
-  background-size: 55%;
+  background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
